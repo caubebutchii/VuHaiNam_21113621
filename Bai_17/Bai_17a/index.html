@@ -1,28 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bai 17a</title>
-</head>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 62.5%;
+        }
+
+        form
+        {
+            width: 60%;
+            background-color: #ffd078;
+            padding: 8px;
+            font-size: 1.2rem;
+        }
+
+        h1
+        {
+            text-align: center;
+        }
+
+        h1, ol
+        {
+            margin-bottom: 32px;
+        }
+
+        ol
+        {
+            padding-left: 18px;        
+        }
+        
+        li
+        {
+            margin-top: 16px;
+        }
+
+        input, textarea
+        {
+            margin-top: 4px;
+            padding: 2px 4px;
+        }
+
+        div
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+        }
+
+        div > label
+        {
+            margin: 8px;
+        }
+
+    </style>
+</head>
 <body>
     <form action="">
         <h1>Survey form</h1>
-        <p>Wall of text, Wall of text, Wall of text, Wall of text, Wall of text, Wall of text, Wall of text, Wall of text, Wall of text, Wall of text, Wall of text, Wall of text.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
         <ol>
             <li>
                 <label for="name">
-                    What is your name?
-                    <input type="text" name="name" id="name">
+                    What is your name? <br>
+                    <input type="text" name="name" id="name" size="30">
                 </label>
             </li>
 
             <li>
-                What is your date of birth?
+                What is your date of birth? <br>
                 <label for="month">
                     Month:
                     <input type="month" name="dob" id="month">
@@ -40,10 +102,87 @@
             </li>
 
             <li>
+                <label for="mail-address">
+                    What is your mailing address? <br>
+                </label>
+                <textarea type="text" name="mail-address" id="mail-address" cols="20", rows="5"></textarea>
+            </li>
+            
+            <li>
+                <label for="name">
+                    What is your email address? <br>
+                    <input type="text" name="name" id="name">
+                </label>
+            </li>
 
+            <li>
+                Have you viewed our product catalog? <br>
+                <label for="yes">
+                    <input type="radio" name="view" id="yes">
+                    Yes
+                </label> <br>
+
+                <label for="no">
+                    <input type="radio" name="view" id="no">
+                    No
+                </label>
+            </li>
+
+            <li>
+                If so,  what product(s), besides the one you are ordering, might you be interesed in purchasing in the future? (Check all that apply)
+                <label for="vcr">
+                    <input type="checkbox" name="vcr" id="vcr">
+                    VCR
+                </label>
+                <br>
+
+                <label for="tv">
+                    <input type="checkbox" name="tv" id="tv">
+                    Big Screen TV
+                </label>
+                <br>
+
+                <label for="audio">
+                    <input type="checkbox" name="audio" id="audio">
+                    Audio equipment
+                </label>
+                <br>
+
+                <label for="video">
+                    <input type="checkbox" name="video" id="video">
+                    Video equipment
+                </label>
+                <br>
+                
+                <label for="camera">
+                    <input type="checkbox" name="camera" id="camera">
+                    Camera equipment
+                </label>
+                <br>
+
+                <label for="other">
+                    <input type="checkbox" name="other" id="other"> Other
+                    <input type="text" name="other" id="" placeholder="Please list" size="30">
+                </label>
+                <br>
+            </li>
+
+            <li>
+                <label for="suggestion">
+                    Do you have any comments, questions, suggestions before proceeding to the Order Form? <br>
+                    <textarea name="suggestion" id="suggestion" cols="40" rows="5" placeholder="Your input:"></textarea>
+                </label>
             </li>
         </ol>
+
+        <div>
+            <label for="send">
+                <input type="button" value="Send form">
+            </label>
+            <label for="clear">
+                <input type="button" value="Clear form">
+            </label>
+        </div>
     </form>
 </body>
-
 </html>

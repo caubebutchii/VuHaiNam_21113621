@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 17b</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 62.5%;
+        }
+
+        form
+        {
+            margin-top: 30px;
+            font-size: 1.2rem;
+            border: 1px solid #000;
+            padding: 8px;
+        }
+
+        input, select
+        {
+            margin: 8px;
+        }
+        
+        input[type = button]
+        {
+            padding: 4px 8px;
+            margin-left: 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="browser:">
+            Browser: 
+            <select name="browser" id="browser">
+                <option value="" selected disabled></option>
+                <option value="edge">Edge</option>
+                <option value="chrome">Chrome</option>
+                <option value="firefox">Firefox</option>
+            </select>
+        </label> <br>
+
+        <label for="name">
+            Use name:
+            <input type="text" name="name" id="name">
+        </label> <br>
+
+        <label for="encryption">
+            Encryption:
+            <select name="encryption" id="encryption">
+                <option value="1024">1024 (Low Grade)</option>
+                <option value="2048">2048 (High Grade)</option>
+            </select>
+        </label> <br>
+
+        <label for="range">
+            0
+            <input type="range" name="range" id="range" min="0" max="100">
+            100
+        </label> <br>
+
+        <label for="dob">
+            Birthday:
+            <input type="date" name="dob" id="dob">
+        </label> <br>
+
+        <label for="color">
+            Select your favourite color:
+            <input type="color" name="color" id="color" value="#ff0000">
+        </label> <br>
+
+        <label for="monthYear">
+            Birthday (month and year):
+            <input type="month" name="monthYear" id="monthYear">
+        </label> <br>
+
+        <label for="week">
+            Select a week:
+            <input type="week" name="week" id="week">
+        </label> <br>
+
+        <label for="time">
+            Select a time:
+            <input type="time" name="time" id="time">
+        </label> <br>
+
+        <label for="search">
+            Search Google:
+            <input type="search" name="search" id="search">
+        </label> <br>
+
+        <label for="tel">
+            Telephone:
+            <input type="tel" name="tel" id="tel">
+        </label> <br>
+
+        <label for="page">
+            Add your homepage:
+            <input type="text" name="page" id="page">
+        </label> <br>
+
+        <input type="button" value="Submit">
+    </form>
+</body>
+</html>
